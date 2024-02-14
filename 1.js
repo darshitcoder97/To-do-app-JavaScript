@@ -128,19 +128,12 @@ const taskComplated = (type) => {
   numberOfActive()
 };
 
-function numberOfActive(){ 
+const numberOfActive = () => { 
   const filterArr = arr.filter((task)=> !task.complated)
-  document.getElementById("count").innerHTML = `Active task ${filterArr.length}`
-  
-}
+  document.getElementById("count").innerHTML = `Active task ${filterArr.length}` 
+};
 
-let setItem = (arr)=>{
+const setItem = (arr)=>{
     localStorage.setItem("tasks",JSON.stringify(arr));
     numberOfActive();
 }
-
-
-
-
-
-
