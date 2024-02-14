@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/13904d7ac7.js" crossorigin="anonymous"></script>
+   </head>
+<body>
+    <section class="todoapp">
+    <header class="header">
+    <h1>TO Do work</h1>
+    <form action="#" onsubmit="addTodo()" class="todo-form ng-valid ng-dirty ng-submitted">
+        <input type="text" name="task" id="task" placeholder="enter your task" class="new-todo">
+    </form>
+</header>
+<section class="main">
+                    <ul class="todo-list" >
+                        <li class="ng-scope">
+							
+                        </li>
+                        
+      
+      </ul>
+</section>
+      <footer class="footer">
+        <span id="count">
+           
+        </span>
+        <div class="btn-group">
+      <button type="button" class="button" onclick="taskComplated('all')">all</button>
+      <button class="button" onclick="taskComplated('todo')">todo</button>
+      <button class="button" onclick="taskComplated('complated')">complate</button>  
+      <button class="button" onclick="taskComplated('clearcomplated')" >clearcomplate</button> 
+    </div>
+</footer>
+</section>
+    
+    <script src="1.js"></script>
+    
+</body>
+</html>
